@@ -17,6 +17,13 @@ for(var i = 0; i < squares.length; i++){
     squares[i].style.background = colors[i];
   //add click listeners fo square
   squares[i].addEventListener("click", function(){
-    alert("clcked");
+   // grab color of clicked square
+  var clickedColor = this.style.background;
+   // compare color to pickedColor
+   if(clickedColor === pickedColor){
+     alert("correct");
+   } else {
+     alert("wrong");
+   }
   });
   } 
