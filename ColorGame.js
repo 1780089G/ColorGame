@@ -21,10 +21,19 @@ for(var i = 0; i < squares.length; i++){
   var clickedColor = this.style.background;
    // compare color to pickedColor
    if(clickedColor === pickedColor){
-     alert("correct");
+      messageDisplay.textContent = ("Correct!");
+      changeColors(clickedColor);
    } else {
      this.style.background = "#232323";
      messageDisplay.textContent = ("try display")
    }
   });
   } 
+
+  function changeColors(color){
+    // loo  thourgh alll square
+    for(var i = 0; i < squares.length; i++){
+      squares[i].style.background = color;
+    }
+    // change each color to match given color
+  }
