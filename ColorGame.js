@@ -31,7 +31,7 @@ hardBtn.addEventListener("click", function(){
   hardBtn.classList.add("selected");
   easyBtn.classList.remove("selected");
   numSquares = 6;
-  colors = generateRandomColors(numSquares);
+  colors = generateRandomColors(numSquares); 
   pickedColor = pickColor(); 
   colorDisplay.textContent = pickedColor;  
   for(var i = 0; i < squares.length; i++){
